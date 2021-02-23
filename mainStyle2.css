@@ -85,6 +85,7 @@ a {
 
   .navbar__toogleBtn {
     display: block;
+    font-size: 23px;
   }
 
   .navbar__menu.active,
