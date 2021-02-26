@@ -86,7 +86,7 @@ console.log([1, 2, 3].map((n) => n * 2 + 1));
     const result = students.reduce((previousValue, currentValue) => {
       return previousValue + currentValue.score;
     }, 0);
-    console.log(result);
+    console.log(result / 5);
   }
   {
     console.log(
@@ -124,7 +124,7 @@ console.log([1, 2, 3].map((n) => n * 2 + 1));
   const obj = JSON.parse(json, (key, value) => {
     console.log(`key : ${key}, value : ${value}`);
 
-    return key === "birthDate" ? new Date() : value;
+    return key === "birthDate" ? new Date(value) : value;
   });
   console.log(
     "rabbit : " +
